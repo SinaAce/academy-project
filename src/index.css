@@ -1,0 +1,21 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+body {
+  background-color: #fafbfc;
+}
+
+@layer base {
+  body {
+    @apply font-yekan;
+  }
+}
+
+@layer components {
+  .flexItem {
+    @apply flex justify-center items-center;
+  }
+  .flexItemJustify {
+    @apply flex justify-center items-center justify-between;
+  }
+}
