@@ -7,7 +7,7 @@ import Icons from "./Icons";
 const Header = () => {
   return (
     <div
-      className="w-full h-[900px] rounded-b-[40%] flexItem flex-col gap-10"
+      className="w-full h-[900px] rounded-b-[30%] flexItem flex-col gap-12"
       style={{
         backgroundImage: `url(${bgSvg})`,
         backgroundSize: "cover",

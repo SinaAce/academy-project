@@ -16,6 +16,15 @@ body {
     @apply flex justify-center items-center;
   }
   .flexItemJustify {
-    @apply flex justify-center items-center justify-between;
+    @apply flex items-center justify-between;
+  }
+  .flexItemCenter {
+    @apply flex justify-center items-center;
+  }
+  .flexItemBetween {
+    @apply flex items-center justify-between;
+  }
+  .flexItemCol {
+    @apply flex items-center justify-center flex-col gap-2;
   }
 }

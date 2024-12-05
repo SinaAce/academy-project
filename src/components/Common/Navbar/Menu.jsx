@@ -9,7 +9,7 @@ const Links = [
 
 const Menu = () => {
   return (
-    <div className="h-full w-4/12 flexItemJustify flex-row-reverse">
+    <div className="h-full w-4/12 flexItemJustify">
       {Links.map((e) => (
         <Link key={e.id} to={e.href}>
           {e.label}
