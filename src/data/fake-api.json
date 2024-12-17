@@ -1,13 +1,13 @@
 [
   {
     "id": 1,
-    "image": "../assets/Landing/header/Icon.svg",
+    "image": "../../../assets/Landing/header/Icon.svg",
     "number": "134,000",
     "title": "نفر دانشجو"
   },
   {
     "id": 2,
-    "image": "../assets/Landing/header/Icon2.svg",
+    "image": "../../../assets/Landing/header/Icon2.svg",
     "number": "26,000",
     "title": "دقیقه آموزش"
   },
