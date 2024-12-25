@@ -1,8 +1,8 @@
 import { Link } from "react-router-dom";
 
 const Links = [
-  { id: "1", label: "دوره ها", href: "/" },
-  { id: "2", label: "اساتید", href: "/courses" },
+  { id: "1", label: "دوره ها", href: "/course" },
+  { id: "2", label: "اساتید", href: "/teachers" },
   { id: "3", label: "ارتباط با ما", href: "/conectus" },
   { id: "4", label: "اخبار و مقالات", href: "/news" },
 ];

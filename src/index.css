@@ -24,7 +24,13 @@ body {
   .flexItemBetween {
     @apply flex items-center justify-between;
   }
+  .flexItemAround {
+    @apply flex items-center justify-around;
+  }
   .flexItemCol {
     @apply flex items-center justify-center flex-col gap-2;
+  }
+  .shadowCustom{
+    box-shadow: 0 0 20px 0 rgba(0, 0, 0, 0.05);
   }
 }
