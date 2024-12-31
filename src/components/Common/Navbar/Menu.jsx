@@ -1,4 +1,4 @@
-import { Link } from "react-router-dom";
+import { Link, NavLink } from "react-router-dom";
 
 const Links = [
   { id: "1", label: "دوره ها", href: "/course" },
@@ -11,9 +11,15 @@ const Menu = () => {
   return (
     <div className="h-full w-4/12 flexItemJustify">
       {Links.map((e) => (
-        <Link key={e.id} to={e.href}>
+        <NavLink
+          key={e.id}
+          to={e.href}
+          className={({ isActive }) =>
+            isActive ? "border-b-2 border-blue-400" : ""
+          }
+        >
           {e.label}
-        </Link>
+        </NavLink>
       ))}
     </div>
   );
