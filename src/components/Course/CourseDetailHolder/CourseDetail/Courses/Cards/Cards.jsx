@@ -49,18 +49,21 @@ const Cards = () => {
               <div className="w-full h-1/4 text-base font-bold">
                 {e.title || "نام دوره در دسترس نیست"}
               </div>
-              <div className="w-full bg-[#ECEFF1] rounded-3xl h-1/4 flexItemAround">
-                <div className="h-full flexItem gap-1 text-xs font-medium text-right">
+              <div className="w-full bg-[#ECEFF1] rounded-3xl h-1/4 flex gap-1 items-center justify-around">
+                <div className="h-full flex items-center gap-1 text-xs font-medium text-right">
                   <img src={note} alt="icon" />
-                  {e.levelName}
+                  <span className="mt-1">{e.levelName}</span>
                 </div>
-                <div className="h-full flexItem gap-1 text-xs font-medium text-right">
+                <div className="h-full flex items-center gap-1 text-xs font-medium text-right">
                   <img src={clock} alt="icon" />
-                  {e.commandCount} ساعت آموزش
+                  <span className="mt-1">{e.commandCount} ساعت آموزش</span>{" "}
                 </div>
-                <div className="h-full flexItem gap-1 text-xs font-medium text-right">
+                <div className="h-full flex items-center gap-1 text-xs font-medium text-right">
                   <img src={calender} alt="icon" />
-                  {convertToFullJalaliDate(e.lastUpdate)}
+                  <span className="mt-1">
+                    {" "}
+                    {convertToFullJalaliDate(e.lastUpdate)}
+                  </span>
                 </div>
               </div>
               <div className="w-full bg-[#ECEFF1] rounded-3xl h-1/4"></div>
