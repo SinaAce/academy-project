@@ -1,10 +1,13 @@
+import { Link } from "react-router-dom";
 import cardLogo from "./../../../assets/Navbar/shopping-bag.svg";
 
 const LoginAndCard = () => {
   return (
     <div className="h-full w-2/12 flexItemJustify flex-row-reverse">
       <div className="w-[133px] h-[48px] bg-[#2196F3] rounded-[80px] flexItem cursor-pointer">
-        <span className="text-white text-right">ورود به حساب</span>
+        <Link to={"/login"}>
+          <span className="text-white text-right">ورود به حساب</span>
+        </Link>
       </div>
       <div className="w-[50px] h-[50px] bg-[#FFFFFF] rounded-full relative flexItem mr-3">
         <div className="w-[18px] h-[18px] rounded-full bg-[#E3F2FD] absolute right-0 top-0 flexItem">
