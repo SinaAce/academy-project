@@ -5,7 +5,6 @@ import UnImg from "../../../../../../../assets/courses/Unimages.png";
 import note from "../../../../../../../assets/courses/note-2.svg";
 import clock from "../../../../../../../assets/courses/clock.svg";
 import calender from "../../../../../../../assets/courses/calendar-2.svg";
-// import like from "../../../../../../assets/courses/heart.svg";
 
 const Cards = () => {
   const [courses, setCourses] = useState([]);
@@ -68,13 +67,13 @@ const Cards = () => {
               </div>
               <div className="w-full h-1/4 flexItemBetween px-2">
                 <div className="font-bold text-sm">
-                  مدرس :{" "}
+                  مدرس :
                   <span className="font-medium text-sm">{e.teacherName}</span>
                 </div>
                 <div className="font-medium text-sm">
                   <span className="font-bold text-sm">
                     {e.currentRegistrants}
-                  </span>{" "}
+                  </span>
                   دانش آموز
                 </div>
               </div>
@@ -90,9 +89,9 @@ const Cards = () => {
                     <path
                       d="M8.41334 13.8736C8.18668 13.9536 7.81334 13.9536 7.58668 13.8736C5.65334 13.2136 1.33334 10.4602 1.33334 5.79356C1.33334 3.73356 2.99334 2.06689 5.04001 2.06689C6.25334 2.06689 7.32668 2.65356 8.00001 3.56023C8.67334 2.65356 9.75334 2.06689 10.96 2.06689C13.0067 2.06689 14.6667 3.73356 14.6667 5.79356C14.6667 10.4602 10.3467 13.2136 8.41334 13.8736Z"
                       stroke="#F44336"
-                      stroke-width="1.5"
-                      stroke-linecap="round"
-                      stroke-linejoin="round"
+                      strokeWidth="1.5"
+                      strokeLinecap="round"
+                      strokeLinejoin="round"
                     />
                   </svg>
                   <span className="mt-1 text-[#F44336] font-medium text-base">

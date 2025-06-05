@@ -15,12 +15,12 @@ const CoursesSort = () => {
         alt="icon"
         className="absolute top-3 right-2 size-7"
       />
-      <select className="w-full h-full appearance-none focus:outline-none px-10 rounded-2xl text-[#263238] text-base font-medium">
-        <option value="famous" selected>
-          محبوب ترین ها
-        </option>
-        <option value="asc">کمترین قیمت</option>
-        <option value="desc">بیشترین قیمت</option>
+      <select
+        defaultValue="latest"
+        className="w-full h-full appearance-none focus:outline-none px-10 rounded-2xl text-[#263238] text-base font-medium"
+      >
+        <option value="latest">جدیدترین</option>
+        <option value="popular">محبوب‌ترین</option>
       </select>
     </div>
   );
