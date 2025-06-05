@@ -1,0 +1,69 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+body {
+  background-color: #fafbfc;
+}
+
+@layer base {
+  body {
+    @apply font-yekan;
+  }
+}
+
+@layer components {
+  .flexItem {
+    @apply flex justify-center items-center;
+  }
+  .flexItemJustify {
+    @apply flex items-center justify-between;
+  }
+  .flexItemCenter {
+    @apply flex justify-center items-center;
+  }
+  .flexItemBetween {
+    @apply flex items-center justify-between;
+  }
+  .flexItemAround {
+    @apply flex items-center justify-around;
+  }
+  .flexItemCol {
+    @apply flex items-center justify-center flex-col gap-2;
+  }
+  .shadowCustom {
+    box-shadow: 0 0 20px 0 rgba(0, 0, 0, 0.05);
+  }
+  .cardShadow {
+    box-shadow: 0 0 50px 0 rgba(0, 0, 0, 0.05);
+  }
+  .basicflex {
+    @apply flex justify-center items-center;
+  }
+  .basiccolflex {
+    @apply flex justify-center items-center flex-col;
+  }
+  .flexaround {
+    @apply flex justify-around items-center;
+  }
+  .flexbetween {
+    @apply flex justify-between items-center;
+  }
+  .blacktext {
+    @apply text-[#2F2F2F];
+  }
+  .whitetext {
+    @apply text-[#FCFCFC];
+  }
+  .bluetext {
+    @apply text-[#3772FF];
+  }
+  .bgblack {
+    @apply bg-[#2F2F2F];
+  }
+  .bgwhite {
+    @apply bg-[#FCFCFC];
+  }
+  .bgblue {
+    @apply bg-[#3772FF];
+  }
+}
