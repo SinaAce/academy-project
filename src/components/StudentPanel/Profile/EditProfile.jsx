@@ -3,9 +3,12 @@ import { useEffect, useState } from "react";
 import { getUserInfo } from "../../../API/StudentPanel/getUserInfo";
 import { editUserInfo } from "../../../API/StudentPanel/editUserInfo";
 import OnSetFormData from "../../../API/StudentPanel/form-data";
+import toast, { Toaster } from "react-hot-toast";
+import { useOutletContext } from "react-router-dom";
 
 const EditProfile = () => {
   const [initialValues, setInitialValues] = useState(null);
+  const { refetchUserInfo } = useOutletContext();
 
   const GetProfileInfo = async () => {
     try {
@@ -30,9 +33,8 @@ const EditProfile = () => {
       const res = OnSetFormData(value);
       const callApi = await editUserInfo(res);
       console.log(callApi);
-      // for (let [key, value] of res.entries()) {
-      //   console.log(`${key}: ${value}`);
-      // }
+      toast.success("عملیات با موفقیت انجام شد");
+      refetchUserInfo();
     } catch (error) {
       console.log(error);
     }
@@ -44,6 +46,8 @@ const EditProfile = () => {
 
   return (
     <div>
+      <Toaster position="top-center" />
+
       <Formik
         initialValues={initialValues}
         onSubmit={onSubmit}

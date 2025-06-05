@@ -26,7 +26,7 @@ const StudentPanel = () => {
         <div className="flex gap-10 m-5">
           <PanelSideMenu />
           <div className="border border-yellow-500 w-4/5">
-            <Outlet context={{ userInfo }} />
+            <Outlet context={{ userInfo, refetchUserInfo: user }} />
           </div>
         </div>
       </div>

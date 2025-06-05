@@ -1,6 +1,7 @@
+import LoginAndCard from "../Common/Navbar/LoginAndCard";
 import Logo from "../Common/Navbar/Logo";
-import DarkmodeNotif from "../Common/Navbar/Darkmode&Notif";
-import PanelTopMenu from "./PanelTopMenu";
+import Menu from "../Common/Navbar/Menu";
+
 
 const PanelNavbar = ({ userInfo }) => {
   return (
@@ -13,8 +14,8 @@ const PanelNavbar = ({ userInfo }) => {
           <span>دانشجو</span>
         </div>
       </div>
-      <PanelTopMenu />
-      <DarkmodeNotif />
+      <Menu />
+      <LoginAndCard />
     </div>
   );
 };
