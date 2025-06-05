@@ -1,4 +1,4 @@
-import React, { useEffect } from "react";
+import { useEffect } from "react";
 import LoginPic from "./LoginPic";
 import { Field, Form, Formik } from "formik";
 import { NavLink, useNavigate } from "react-router-dom";

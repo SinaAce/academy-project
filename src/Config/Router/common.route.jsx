@@ -2,12 +2,13 @@ import MainLayout from "../../Components/Layout/MainLayout";
 import Landing from "../../Components/Pages/Landing";
 import Course from "../../Components/Pages/Course/Course";
 import LoginPage from "../../Components/Pages/Auth/Login";
-import StudentPanel from "../../Components/Pages/Panel/index";
 import Register from "../../Components/Pages/Auth/Register";
 import Forgotpass from "../../Components/Pages/Auth/Forgotpass";
 import Notfound from "../../Components/Pages/404/Notfound";
-
 import PrivateRoute from "./privateRoute";
+import StudentPanel from "./../../Components/StudentPanel/StudentPanel";
+import Dashboard from "./../../Components/StudentPanel/Dashboard";
+import EditProfile from "./../../Components/StudentPanel/Profile/EditProfile";
 
 export const commonRoute = [
   {
@@ -47,15 +48,15 @@ export const commonRoute = [
         <StudentPanel />
       </PrivateRoute>
     ),
-    // children: [
-    //   {
-    //     index: true,
-    //     element: <Dashboard />,
-    //   },
-    //   {
-    //     path: "profile",
-    //     element: <EditProfile />,
-    //   },
-    // ],
+    children: [
+      {
+        index: true,
+        element: <Dashboard />,
+      },
+      {
+        path: "profile",
+        element: <EditProfile />,
+      },
+    ],
   },
 ];
