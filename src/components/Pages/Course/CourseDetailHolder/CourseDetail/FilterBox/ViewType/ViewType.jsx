@@ -1,5 +1,5 @@
-import gridView1 from "../../../../../../assets/courses/grid-1.svg";
-import gridView2 from "../../../../../../assets/courses/grid-2.svg";
+import gridView1 from "../../../../../../../assets/courses/grid-1.svg";
+import gridView2 from "../../../../../../../assets/courses/grid-2.svg";
 const ViewType = () => {
   return (
     <div className="w-1/12 bg-[#ECEFF1] h-full rounded-2xl flexItemAround gap-1 p-1">

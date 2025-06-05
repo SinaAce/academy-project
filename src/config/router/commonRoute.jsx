@@ -1,7 +1,7 @@
 import { createBrowserRouter } from "react-router-dom";
-import MainLayout from "../../components/Layout/MainLayout";
-import Landing from "../../components/Landing";
-import Course from "../../components/Course/Course";
+import MainLayout from "../../Components/Layout/MainLayout";
+import Landing from "../../Components/Pages/Landing";
+import Course from "../../Components/Pages/Course/Course";
 
 export const commonRoute = createBrowserRouter([
   {

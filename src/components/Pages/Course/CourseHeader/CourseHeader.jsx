@@ -1,8 +1,7 @@
-import React from "react";
-import vector from "../../../assets/courses/victorGroup.svg";
-import dots from "../../../assets/courses/Dots.svg";
-import bigDots from "../../../assets/courses/moreDots.svg";
-import shape1 from "../../../assets/courses/Rectangle 25.svg";
+import vector from "../../../../assets/courses/victorGroup.svg";
+import dots from "../../../../assets/courses/Dots.svg";
+import bigDots from "../../../../assets/courses/moreDots.svg";
+import shape1 from "../../../../assets/courses/Rectangle 25.svg";
 
 const CourseHeader = () => {
   return (

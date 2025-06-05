@@ -1,8 +1,8 @@
-import bgSvg from "./../../../assets/Landing/Image [home-hero-background].svg";
+import bgSvg from "./../../../../assets/Landing/Image [home-hero-background].svg";
 import SiteStatistic from "./SiteStatistic";
 import Text from "./Text";
 import Icons from "./Icons";
-import SearchBox from "../../Common/SearchBox/SearchBox";
+import SearchBox from '../../../Common/SearchBox/SearchBox';
 
 const Header = () => {
   return (

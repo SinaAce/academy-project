@@ -1,10 +1,10 @@
 import { useState, useEffect } from "react";
 import axios from "axios";
 import moment from "jalali-moment";
-import UnImg from "../../../../../../assets/courses/Unimages.png";
-import note from "../../../../../../assets/courses/note-2.svg";
-import clock from "../../../../../../assets/courses/clock.svg";
-import calender from "../../../../../../assets/courses/calendar-2.svg";
+import UnImg from "../../../../../../../assets/courses/Unimages.png";
+import note from "../../../../../../../assets/courses/note-2.svg";
+import clock from "../../../../../../../assets/courses/clock.svg";
+import calender from "../../../../../../../assets/courses/calendar-2.svg";
 // import like from "../../../../../../assets/courses/heart.svg";
 
 const Cards = () => {

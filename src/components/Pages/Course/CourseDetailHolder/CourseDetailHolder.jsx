@@ -1,4 +1,3 @@
-import React from "react";
 import CourseDetail from "./CourseDetail/CourseDetail";
 import CourseFilter from "./CourseFilter/CourseFilter";
 

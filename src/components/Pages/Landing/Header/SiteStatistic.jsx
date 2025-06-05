@@ -1,8 +1,8 @@
 import { useState, useEffect } from "react";
 import axios from "axios";
-import teacherIcon from "../../../assets/Landing/header/Icon.svg";
-import courseIcon from "../../../assets/Landing/header/Icon2.svg";
-import studentIcon from "../../../assets/Landing/header/Icon3.svg";
+import teacherIcon from "../../../../assets/Landing/header/Icon.svg";
+import courseIcon from "../../../../assets/Landing/header/Icon2.svg";
+import studentIcon from "../../../../assets/Landing/header/Icon3.svg";
 
 const SiteStatistic = () => {
   const [siteStatic, setSiteStatic] = useState([]); // مقدار اولیه آرایه

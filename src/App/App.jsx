@@ -1,6 +1,5 @@
 import { RouterProvider } from "react-router-dom";
-import "./App.css";
-import { commonRoute } from "../config/router/commonRoute";
+import { commonRoute } from "../Config/router/commonRoute";
 
 function App() {
   return <RouterProvider router={commonRoute} />;
