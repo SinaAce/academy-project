@@ -9,6 +9,7 @@ import PrivateRoute from "./privateRoute";
 import StudentPanel from "./../../Components/StudentPanel/StudentPanel";
 import Dashboard from "./../../Components/StudentPanel/Dashboard";
 import EditProfile from "./../../Components/StudentPanel/Profile/EditProfile";
+import FavCourses from "../../components/StudentPanel/FavCourses";
 
 export const commonRoute = [
   {
@@ -56,6 +57,10 @@ export const commonRoute = [
       {
         path: "profile",
         element: <EditProfile />,
+      },
+      {
+        path: "favoriteCourses",
+        element: <FavCourses />,
       },
     ],
   },
