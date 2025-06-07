@@ -10,6 +10,7 @@ import StudentPanel from "./../../Components/StudentPanel/StudentPanel";
 import Dashboard from "./../../Components/StudentPanel/Dashboard";
 import EditProfile from "./../../Components/StudentPanel/Profile/EditProfile";
 import FavCourses from "../../components/StudentPanel/FavCourses";
+import CourseDetail from "../../components/Pages/Course/CourseDetail/CourseDetail";
 
 export const commonRoute = [
   {
@@ -23,6 +24,10 @@ export const commonRoute = [
       {
         path: "/course",
         element: <Course />,
+      },
+      {
+        path: "/course/:id",
+        element: <CourseDetail />,
       },
     ],
   },
