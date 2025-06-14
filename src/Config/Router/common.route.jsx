@@ -26,7 +26,7 @@ export const commonRoute = [
         element: <Course />,
       },
       {
-        path: "/course/:id",
+        path: "/course/:courseId",
         element: <CourseDetail />,
       },
     ],

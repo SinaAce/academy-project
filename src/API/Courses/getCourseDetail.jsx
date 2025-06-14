@@ -1,3 +1,4 @@
+import { useParams } from "react-router-dom";
 import axois from "../ApiConfig";
 
 export const getCourseDetail = async (courseId) => {
