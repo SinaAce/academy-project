@@ -5,6 +5,7 @@ import UnImg from "../../../../../../../assets/courses/Unimages.png";
 import note from "../../../../../../../assets/courses/note-2.svg";
 import clock from "../../../../../../../assets/courses/clock.svg";
 import calender from "../../../../../../../assets/courses/calendar-2.svg";
+import { NavLink } from "react-router-dom";
 
 const Cards = () => {
   const [courses, setCourses] = useState([]);
@@ -34,9 +35,10 @@ const Cards = () => {
     <div className="flex flex-wrap justify-around gap-4">
       {courses.length > 0 ? (
         courses.map((e) => (
-          <div
+          <NavLink
             className="h-[389px] w-[296px] bg-white cardShadow rounded-3xl flexItemCol p-4"
             key={e.courseId}
+            to={`/course/${e.courseId}`}
           >
             <div className="w-full h-3/6 rounded-[20px]">
               <img
@@ -106,7 +108,7 @@ const Cards = () => {
                 </div>
               </div>
             </div>
-          </div>
+          </NavLink>
         ))
       ) : (
         <div>در حال بارگذاری دوره‌ها...</div>

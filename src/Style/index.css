@@ -48,6 +48,12 @@ body {
   .flexbetween {
     @apply flex justify-between items-center;
   }
+  .primarycolor {
+    @apply text-[#2196F3];
+  }
+  .primarybg {
+    @apply bg-[#2196F3];
+  }
   .blacktext {
     @apply text-[#2F2F2F];
   }
